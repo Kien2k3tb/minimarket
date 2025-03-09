@@ -6,6 +6,7 @@
     <title></title>
     <link rel="stylesheet" href="../assets/style.css?v=38">
     <?php include '../config/database.php'; ?>
+    <?php include '../config/checkaccountID.php'?>
     <?php include '../process/product_user_process.php'; ?>
 </head>
 <body class="page-index">

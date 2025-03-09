@@ -6,6 +6,7 @@
     <title></title>
     <link rel="stylesheet" href="../assets/style.css?v=51">
     <?php include '../config/database.php'; ?>
+    <?php include '../config/checkaccountID.php'?>
     <?php include '../process/voucher_management_process.php'; ?>
 </head>
 <body class="page-index">

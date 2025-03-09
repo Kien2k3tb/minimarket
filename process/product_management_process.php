@@ -1,4 +1,5 @@
 <?php
+
 // Thêm sản phẩm mới
 if(isset($_POST['add_newproduct_button'])){
     $_SESSION['add_newproduct']='flex';
