@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100hv; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*sidebar*/
+.admin-sidebar{
+    background-color: #767d89;
+    width: 250px;
+    top: 0;
+    bottom: 0;
+    padding-top: 80px;
+    position: fixed;
+}
+.admin-sidebar ul{
+    background-color: #6b7b95;
+    list-style: none;
+}
+.admin-sidebar ul li{
+    margin-bottom: 10px;
+    font-size: 20px;  
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #FFF;
+}
+.admin-sidebar ul li:last-child{
+    border-bottom: none;
+}
+.admin-sidebar ul li a{
+    text-decoration: none;
+    color: #dcecfb;
+    margin-left: 40px;
+
+}
+.admin-sidebar ul li a:hover{
+    color: #fff;
+}
+/* footer */
+.footer{
+    position: fixed;
+    bottom: 0;
+    color: #6b7b95;
+    font-size: 30px;
+    background-color:  #f0f4f7;
+    height: 50px;
+    width: calc(100% - 250px);
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    margin-left: 250px;
+}
+/* login register */
+.page-auth{
+    background-color: #336b87;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh; 
+}
+.box-register {
+    background: #fff; 
+    width: 350px;
+    height: 700px;
+}
+.box-login {
+    background: #fff; 
+    width: 350px;
+    height: 350px;
+}
+.auth-header{
+    background: #33b5e6;
+    color: #FFF;
+    height: 70px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.regis_button{
+    margin-top: 10px;
+}
+.auth-form{
+    margin-top: 20px;
+}
+.auth-form input,
+.auth-form textarea{
+    display: block;
+    margin: 15px auto;
+    height: 40px;
+    width: 300px;
+    margin-top: 10px;
+}
+.auth-form button{
+    display: block;
+    background-color: #ef4c4d;
+    color: #fff;
+    border: none;
+    margin: 15px auto;
+    height: 40px;
+    width: 300px;
+}
+.auth-links div{
+    text-align: center;
+}
+.auth-links div a{
+    color: #33b5e6;
+    font-size: 18px;
+    text-decoration: none;
+}
+.auth-links div:hover{
+    cursor: pointer;
+}
+.error_auth{
+    font-size: 12px;
+    color: red;
+    display: flex;
+    justify-content: left;
+    margin-left: 25px;
+    margin-top: -10px;
+}
+/* management */
+.page-index{
+    background-color: #FFF;
+}
+.title{
+    color: #6b7b95;
+    font-size: 50px;
+    background-color:  #f0f4f7;
+    height: 70px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    margin-left: 250px;
+}
+.content{
+    margin-left: 250px;
+}
+
+.data_table{
+    background-color: #dcecfb;
+    width: 1200px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    padding: 1px;
+}
+.content table tr td{
+    background-color: #6b7b95;
+    color: #dcecfb;
+    height: 30px;
+    text-align: center;
+}
+.box_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+/* product-management */
+.product_td {
+    display: flex;
+    justify-content: space-between;
+}
+.product_td div{
+    text-align: left;
+}
+.product_td button{
+    display: inline-block;
+}
+.product_td .product_name_input{
+    width: 150px ;
+}
+.product_td .stock_quantity_input{
+    width: 50px ;
+}
+.product_td .price_input{
+    width: 80px ;
+}
+.product_td .category_input{
+    width: 90px ;
+}
+.product_td .supplier_input{
+    width: 80px ;
+}
+.product_td .product_img_input{
+    width: 250px ;
+}
+
+/* order-management */
+
+.order_td label{
+    text-align: left;
+    width: 83px;
+    display: inline-block;
+}
+.order_td select{
+    text-align: left;
+    margin-left: 10px;
+}
+.order_td td div {
+    text-align: left;
+}
+.order_td .center {
+    text-align: center;
+}
+.order_td .status_label{
+    display: inline-block;
+    width: 84px;
+}
+.status_td{
+    display:flex;
+}
+/* account-management */
+
+.add_button{
+    color: #6b7b95;
+    margin-left: 40px;
+    margin-top: 20px;
+    height: 30px;
+    width: 140px;
+    font-weight: bold;
+}
+.add_container{
+    position: fixed;
+    justify-content: center;
+    background-color:  #f0f4f7;
+    margin-top: 14px;
+    margin-left: 350px;
+    height: 520px;
+    width: 600px;
+    border-radius: 5%;
+}
+.add_container .box-title{
+    color: #6b7b95;
+    font: bold 26px sans-serif ; 
+    margin-top: 15px;
+}
+.success_add{
+    font-size: 12px ;
+    color: blue;
+}
+.error_add{
+    font-size: 12px;
+    color: red ;
+}
+.add input,
+.add button,
+.add select,
+.add textarea{
+    display: block; 
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.set_btn{
+    width: 80px;
+}
+h3 {
+    color: #6b7b95;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 25px;
+}
+.td_container{
+    display: flex;
+    justify-content: space-between;
+}
+.inpt{
+    width: 70px;
+}
+.btn{
+    width: 35px;
+}
+/* voucher- management */
+.add_voucher_container{
+    position: fixed;
+    display: flex;
+    align-items: center ;
+    background-color:  #f0f4f7;
+    margin-top: 20px;
+    margin-left: 350px;
+    height: 520px;
+    width: 600px;
+    border-radius: 5%;
+    flex-direction: column;
+}
+.add_voucher_container div:first-child{
+    margin-top: 10px;
+}
+.add_voucher_container *{
+    display: block;
+    margin-bottom: 10px;
+}
+.add_voucher_container .box-title{
+    color: #6b7b95;
+    font: bold 26px sans-serif ; 
+}
+
+/* product-user */
+.msgAddcart_container{
+    position: fixed;
+    background: #fff;
+    height: 70px;
+    width: 320px;
+    margin-top: -92px;
+    margin-left: 450px;
+    border-radius: 5pt;
+    color: #1c1b1b;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.msgAddcart_container{
+    flex-direction: column;
+}
+.msgAddcart_container button{
+    color: #fff;
+    background-color: #33b5e6;
+    border: #fff;
+    margin-top: 20px;
+    margin-left: 250px;
+    height: 30px;
+    width: 50px;
+}
+.content_container .search{
+    margin-left: 40px;
+}
+.product_container{
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 40px;
+    margin-top: 20px;
+    gap: 20px;
+ 
+}
+.product{
+    border: 1px solid black;
+    height: 250px ;
+    width: 180px;
+}
+.product .product_img img{
+    background-color: yellow;
+    height: 179px ;
+    width: 180px;
+}
+.product .product_name{
+    color: rgb(58, 64, 64);
+    height: 20px;
+}
+.product .product_price{
+    color: rgb(58, 64, 64);
+    height: 20px;
+    width: 180px;
+    text-align: right;
+}
+.product .buyproduct_button{
+    width: 180px;
+    height: 29px;
+}
+/* cart-user */
+.cart_container{
+    height: 668px;
+    width:  100% ;
+    color: #0f0d0d;
+    background-color: #efeaea;
+    flex-direction: column;
+}
+.cart_container .label{
+    font-size: 20px;
+    font-weight: bold;
+}
+.cart_container .order_id_label{
+    text-decoration: underline;
+}
+.cart_container .vouchercode_input{
+    width: 200px;
+}
+.cart_product div{
+    margin-bottom: 5px;
+}
+.cart_product span{
+    display: inline-block;
+}
+.cart_product .cart_product_name{
+    width: 270px;
+}
+.cart_container .price{
+    width: 130px;
+}
+.cart_container .quantity{
+    width: 50px;
+}
+.cart_container input{
+    width: 40px;
+    text-align: center;
+}
+.cart_container button{
+    width: 80px;
+}
+.history_order span{
+    display: inline-block;
+}
+.history_order .order_date{
+    width: 325px;
+}
+.history_order .product_name{
+    width: 330px;
+}
+.history_order .status{
+    width: 290px;
+}
+.history_order .quantity{
+    width: 300px;
+}
+.history_order .total_amount{
+    width:295px;
+}
+.history_order .price{
+    width: 300px;
+}
+
+
+
+/* setting-user */
+.box_set{
+    background-color: #f0f4f7;
+    border-radius: 5%;
+    height: 400px;
+    width: 500px; 
+}
+.box_set div{
+    margin-top: 10px;
+}
+.box_set form{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.box_set .label{
+    display: inline-block;
+    width:  120px;
+    
+}
+.box_set .value{
+    display: inline-block;
+    width:  180px;
+    vertical-align: top; 
+    word-wrap: break-word;
+}
+.box_set input{
+    width:  150px;
+}
+.setPassword_container{
+    position: fixed;
+    background-color:  #abaea7;
+    color: rgb(48, 46, 46);
+    height: 300px;
+    width: 400px;
+    border-radius: 5%;
+    margin-top: 40px;
+}
+.setPassword_container div{
+    margin-top: 10px;
+}
+.setPassword_container form{
+   margin-top: 40px;
+   margin-left: 40px;
+}
+.setPassword_error{
+    font-size: 12px;
+    color: red;
+}
+.setPassword_success{
+    font-size: 12px;
+    color: blue;
+}
